@@ -1,0 +1,103 @@
+
+body
+    -webkit-user-select none
+    cursor default
+    margin 16px 32px
+    user-select none
+
+ul
+    list-style none
+    margin 0
+    padding 0
+
+.tree-root
+    ul
+        border-left dotted 1px hsl(0, 0, 50)
+        padding-left 24px
+
+    .filter, .fold
+        display none
+
+    .focus
+        background-color hsl(0, 0, 85)
+
+    .line
+        height 24px
+
+    select.form-control
+        display inline-block
+        height 100%
+        padding 0
+        width auto
+
+    .glyphicon
+        color hsl(0, 0, 60)
+        margin 0 4px
+
+    .glyphicon-folder-close
+        color hsl(50, 90, 70)
+
+    .glyphicon-arrow-right
+        color hsl(210, 50, 70)
+
+    .memo
+        display none
+        padding-left 25px
+        white-space pre
+        width 334px
+
+    &.visible-memo .memo
+        display block
+
+    &.visible-memo .open-memo .memo
+        display none
+
+    .memo-form
+        display none
+        padding 8px 0 8px 12px
+
+    .open-memo .memo-form
+        display block
+
+    textarea.form-control
+        display inline-block
+        height 86px
+        vertical-align bottom
+        width 360px
+
+.score
+    display inline-block
+    margin-bottom 32px
+    margin-right 64px
+    vertical-align middle
+    width 240px
+
+    h1
+        margin 0
+
+    .progress
+        margin-bottom 4px
+
+    .label
+        font-weight normal
+        margin-right 4px
+        padding 0 4px
+
+    .label:nth-child(n+4)
+        margin-left 8px
+
+.option
+    display inline-block
+    margin-bottom 32px
+    vertical-align middle
+
+    label
+        font-weight normal
+        margin 0
+
+    select.form-control
+        display inline-block
+        height 32px
+        margin-left 8px
+        padding 0 4px
+        width auto
